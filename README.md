@@ -18,7 +18,7 @@ This repository contains my submissions for the NOVEK engineering technical asse
 3. **Total parts requiring bending:** 5
 
 ### Deliverables Included :
-* `Novek_Ice_Maker_Fabrication_Drawings.pdf`: Full 2D multi-sheet engineering drawing package scaled to A4 size, featuring overall dimensions and flat patterns with automated bend annotations.
+* `Novek_Ice_Maker.pdf`: Full 2D multi-sheet engineering drawing package scaled to A4 size, featuring overall dimensions and flat patterns with automated bend annotations.
 * `Nurxiovo_Ice_Maker_Assembly.step`: Standardized geometric export for manufacturing verification.
 * `Novek_Ice_Maker_PackAndGo.zip`: Complete Autodesk Inventor project archive bundle containing all linked parts (.ipt), assembly (.iam), and project mapping (.ipj) files.
 
@@ -31,11 +31,6 @@ This repository contains my submissions for the NOVEK engineering technical asse
 ### Hardware Substitution Note:
 * **Modem Utilized:** SIM900D GSM Module (Substituted for the requested SIMCOM SIM800L due to component availability within the Proteus workspace library). The underlying firmware architecture remains identical as both modems share equivalent AT command structures for GPRS profile initializations and secure HTTP transport actions.
 
-### Implementation Highlights:
-* **Non-Blocking Architecture:** Utilized hardware-timed `millis()` tracking structures for concurrent task management, separating the 2-second DHT sensor validation from the 30-second cloud update loop to eliminate processor-stalling delays.
-* **Firmware Robustness:** Integrated dynamic payload length calculations and strict data type definitions (`isnan` verification arrays) to handle runtime sensor communication dropouts smoothly without breaking cloud connectivity.
-* **Secure Communications:** Standardized on HTTPS protocol handshakes via GSM module explicit SSL layer initializations (`AT+HTTPSSL=1`) to successfully target the secure https:// endpoint.
-
 ### Deliverables Included :
-* `iot_motor_control.ino`: Refactored production-ready Arduino firmware code optimized for low-latency loop execution.
+* `fan_control_system.ino`: Refactored production-ready Arduino firmware code optimized for low-latency loop execution.
 * `proteus_circuit_schematic.pdsprj`: Complete workspace file containing microcontroller wiring, virtual terminal debug hooks, and simulated peripheral test loads.
