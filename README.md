@@ -17,7 +17,7 @@ This repository contains my submissions for the NOVEK engineering technical asse
 2. **Max bends on a single part:** 4
 3. **Total parts requiring bending:** 5
 
-### Deliverables Included in `/Test_1_CAD`:
+### Deliverables Included :
 * `Novek_Ice_Maker_Fabrication_Drawings.pdf`: Full 2D multi-sheet engineering drawing package scaled to A4 size, featuring overall dimensions and flat patterns with automated bend annotations.
 * `Nurxiovo_Ice_Maker_Assembly.step`: Standardized geometric export for manufacturing verification.
 * `Novek_Ice_Maker_PackAndGo.zip`: Complete Autodesk Inventor project archive bundle containing all linked parts (.ipt), assembly (.iam), and project mapping (.ipj) files.
@@ -36,6 +36,6 @@ This repository contains my submissions for the NOVEK engineering technical asse
 * **Firmware Robustness:** Integrated dynamic payload length calculations and strict data type definitions (`isnan` verification arrays) to handle runtime sensor communication dropouts smoothly without breaking cloud connectivity.
 * **Secure Communications:** Standardized on HTTPS protocol handshakes via GSM module explicit SSL layer initializations (`AT+HTTPSSL=1`) to successfully target the secure https:// endpoint.
 
-### Deliverables Included in `/Test_2_Proteus_IoT`:
+### Deliverables Included :
 * `iot_motor_control.ino`: Refactored production-ready Arduino firmware code optimized for low-latency loop execution.
 * `proteus_circuit_schematic.pdsprj`: Complete workspace file containing microcontroller wiring, virtual terminal debug hooks, and simulated peripheral test loads.
